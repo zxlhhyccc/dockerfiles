@@ -1,4 +1,3 @@
-version: "3"
 services: 
   oci:
     image: stilleshan/java_oci_manage
@@ -7,6 +6,5 @@ services:
     ports:
       - 9527:9527
     volumes:
-      - ./config/client_config:/app/client_config
-      - ./config/key.pem:/app/key.pem
+      - ./app:/app
     restart: always
